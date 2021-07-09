@@ -1,3 +1,22 @@
+ nav{
+    background-color: black;
+    overflow: hidden;
+}
+nav a:hover{
+    color: rgb(17, 124, 143);
+}
+
+/* nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    float: left;
+} */
+
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -19,6 +38,8 @@ header {
 }
 
 nav {
+    /*  #333 */
+    /* background-color: rgb(17, 124, 143); */
     background-color: #333;
     overflow: hidden;
 }
