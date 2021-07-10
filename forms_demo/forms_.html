@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms_.css">
+</head>
+<body>
+    
+    <main>
+        
+        <img src="Images/contact.png" alt="" class="main_image">
+        
+        
+        <div class="detail_div">
+            <h1 class="heading">Contact Us</h1>
+            <p class="mandatory">All the feilds are mandatory !</p>
+
+            <form action="" class="form">
+                <p class="labels">Your Name :- </p>
+                <input type="text" name="user_name" placeholder="Your Full Name" class="tags">
+       
+                <p class="labels">Your Email :- </p>
+                <input type="email" name="user_email" placeholder="Valid Email Address" class="tags">
+                
+                <p class="labels">Your Message :-  </p>
+                <textarea name="user_message" class="tags message_tag" cols="30" rows="5"></textarea>
+                
+                <p class="labels">Subject :- </p>
+                <select name="subject" class="tags">
+                    <option value="null">Select a Subject</option>
+                    <option value="job_inquiry">Job Inquiry</option>
+                    <option value="hire_someone">Hire Someone</option>
+                    <option value="post_A_job">Post a Job</option>
+                    <option value="report_a_bug">Report a Bug</option>
+                </select>
+
+                <button type="submit" class="submit_button">Submit Details !</button>
+            </form>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

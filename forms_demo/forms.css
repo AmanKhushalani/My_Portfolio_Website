@@ -48,6 +48,7 @@ fieldset{
 input[type="submit"]:hover{
     background-color:rgb(24, 85, 42);
 }
+
 input[type="submit"]
 {
     background-color:rgb(36, 121, 60);
