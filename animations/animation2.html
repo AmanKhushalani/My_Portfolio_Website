@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span
+        {
+            text-transform: lowercase;
+            font-size: larger;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family:Roboto Mono,monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span id="d"></span><span>_</span>
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+    var s = "This is my heading !";
+    var index = 0;
+    var ID = 0;
+
+
+    function hide() 
+    {
+        var temp = document.getElementById("d").innerHTML;
+        document.getElementById("d").innerHTML = temp.substr(0,temp.length-2);
+        
+        if(temp.length == 2)
+        {
+            window.clearInterval(ID);
+            index = 0;
+            ID = window.setInterval(show , 100); 
+        }
+
+    }
+
+    function change()
+    {
+        ID = window.setInterval(hide , 100);
+    }
+
+    function show()
+    {
+    
+        document.getElementById("d").innerHTML = document.getElementById("d").innerHTML + s[index];
+        index += 1;
+        
+        if(index == s.length)
+        {
+            window.clearInterval(ID)
+            window.setTimeout(change, 2000);
+
+        }
+    }
+    function start()
+    {
+        ID = window.setInterval(show , 100);
+    }
+    start()
+</script>
